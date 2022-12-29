@@ -269,6 +269,15 @@ body.nav-active {
   font-weight: var(--weight-regular);
 }
 
+.list-title {
+  color: #999;
+}
+
+.footer-name {
+  color: #fff;
+  display: inline;
+}
+
 .h1 {
   font-size: var(--fontSize-2);
   line-height: 1.2;
@@ -703,6 +712,18 @@ body.nav-active {
   margin-block-end: 20px;
 }
 
+.tab-content .section-text {
+  color: #bbb;
+}
+
+.card-icon {
+  opacity: 50%;
+}
+
+.item-icon {
+  opacity: 50%;
+}
+
 .about-item .span {
   line-height: 1.4;
 }
@@ -1010,6 +1031,7 @@ textarea.input-field {
 .copyright {
   flex-grow: 1;
   font-family: var(--fontFamily-recoleta);
+  color: #999;
 }
 
 .back-top-btn .span {
