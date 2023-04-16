@@ -157,6 +157,7 @@ address {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -165,7 +166,8 @@ body {
   font-family: var(--fontFamily-roboto);
   font-size: var(--fontSize-8);
   line-height: 1.75;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 body.loaded {
@@ -494,7 +496,11 @@ body.nav-active {
   margin-block-end: 10px;
 }
 
-.nav-close-btn {
+.navbar-top .logo img {
+  height: 200px;
+}
+
+.na .nav-close-btn {
   width: 30px;
   height: 30px;
   background-color: var(--bg-smoky-black);
@@ -908,9 +914,10 @@ body.nav-active {
 
 .slider-list {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  overflow: auto;
+  overflow-x: scroll;
   scroll-snap-type: inline mandatory;
   padding-block-end: 5px;
 }
@@ -1161,6 +1168,10 @@ textarea.input-field {
     margin-inline: auto;
   }
 
+  .slider-item {
+    padding: 0 48px;
+  }
+
   /**
    * TESTIMONIALS
    */
@@ -1285,8 +1296,13 @@ textarea.input-field {
    * PROJECTS
    */
 
+  .slider-list {
+    flex-direction: row;
+  }
+
   .slider-item {
     min-width: calc(50% - 15px);
+    padding: 0;
   }
 
   /**
